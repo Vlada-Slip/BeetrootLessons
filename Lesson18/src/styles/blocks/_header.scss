@@ -1,0 +1,55 @@
+@import "./../constants/index.scss";
+
+.header {
+  position: absolute;
+  top: calc(100vh - 80px);
+  height: 80px;
+  width: 100%;
+  background-color: $backgroundPrimary;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 16px;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-left: 24px;
+      text-transform: uppercase;
+      color: $white;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (max-width: $deviceSizeSM) {
+      display: none;
+    }
+  }
+}
+
+.hamburger-menu {
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  display: none;
+
+  p {
+    height: 2px;
+    margin-bottom: 6px;
+    background-color: $white;
+    width: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: $deviceSizeSM) {
+    display: block;
+  }
+}

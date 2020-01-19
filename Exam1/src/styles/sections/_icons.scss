@@ -1,0 +1,80 @@
+@import "./../constants/index.scss";
+@import "./../mixins.scss";
+
+
+.icon{
+background-color:
+#333333;
+padding-top: 90px;
+padding-bottom: 90px;
+
+@media screen and(max-width:$deviceSizeSM){
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @media screen and(max-width:$deviceSizeMD){
+  padding-top: 70px;
+padding-bottom: 70px;
+}
+
+
+&__wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+&__icon-block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+
+    @media screen and(max-width:$deviceSizeSM){
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+      }
+}
+
+&__icon-block-content {
+    max-width: 33%;
+    text-align: center;
+
+    @media screen and(max-width:$deviceSizeSM){
+        max-width: 80%;
+        text-align: center;
+      }
+      a{
+          outline: none;
+      }
+}
+
+&__icon-block-content--center{
+    
+    @media screen and(max-width:$deviceSizeSM){
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+}
+&__icon-block-content p {
+    font-size: 36px;
+    font-family: 'Aleo', serif;
+    color: 
+    #fff;
+}
+
+&__icon-block-content img {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+&__icon-block-content img:hover {
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -o-transform: scale(1.3);
+    }
+}
+

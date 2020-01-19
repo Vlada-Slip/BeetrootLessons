@@ -1,0 +1,19 @@
+.content__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+
+  .image__contain {
+    max-height: 600px;
+    max-width: 600px;
+    display: block;
+    object-fit: contain;
+  }
+  .list-item{
+    display: inline-block;
+    
+    cursor: pointer;
+    }
+  

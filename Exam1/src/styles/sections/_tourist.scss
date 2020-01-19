@@ -1,0 +1,111 @@
+@import "./../constants/index.scss";
+@import "./../mixins.scss";
+
+.turist {
+    padding-bottom: 100px;
+    background-image:  url("./../assets/images/men.png");
+    width: 100%;
+    height: 700px;
+    padding-top: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: $deviceSizeSM){
+        height: 600px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (max-width: $deviceSizeMD){
+        height: 700px;
+        padding-top: 80px;
+    }
+    
+
+
+ h2 {
+    font-size: 36px;
+    font-family: 'Aleo', serif;
+    text-align: center;
+    color: 
+    #fff;
+
+    @media screen and (max-width: $deviceSizeSM)
+    {
+        font-size: 28px;
+    }
+}
+
+&__wrapper-turist {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+
+    @media screen and (max-width: $deviceSizeSM)
+    {
+        padding-top: 60px;
+    }
+
+    @media screen and (max-width: $deviceSizeMD){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+&__block__left img {
+    height: 286px;}
+
+  
+  
+
+  &__block__right {
+    background-color: 
+    #333333;
+    width: 60%;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+}
+
+&__block__right h3 {
+    font-family: 'Myriad Pro';
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    color: 
+    #fff;
+    font-weight: normal;
+    padding-top: 30px;
+    padding-bottom: 35px;
+
+    @media screen and (max-width: $deviceSizeSM) {
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+}
+
+&__block__right p {
+    font-size: 15px;
+    font-family: 'Aleo', serif;
+    line-height: 1.6;
+    color: 
+    #fff;
+    font-family: 'Myriad Pro';
+    margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: $deviceSizeSM)
+    {
+        font-size: 12px;
+    }
+
+    &__block__right  img {
+        width: 20px;
+        margin-bottom: 7px;
+        margin-right: 10px;
+    }
+}
+}

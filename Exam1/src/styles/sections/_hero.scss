@@ -1,0 +1,165 @@
+@import "./../constants/index.scss";
+@import "./../mixins.scss";
+.hero {
+   
+  background: url("./../assets/images/header_bg.png");
+  max-width: 100%;
+  height: 560px;
+  background-size: cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 250px;
+
+
+@media screen and (max-width:$deviceSizeSM)
+{
+  padding-top: 150px;
+  height: 450px;
+}
+
+
+
+
+  &__hero__container {
+    min-height: 100vh;
+    display: block;
+    align-items: center;
+  }
+}
+
+  .title-block {
+    text-align: center;
+
+  &__title{
+    font-size: 48px;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: bold;
+text-transform: uppercase;
+color:
+#fff;
+margin-bottom: 15px;
+
+@media screen and (max-width: $deviceSizeSM)
+{
+  font-size: 34px;
+}
+
+  }
+ 
+  
+  
+    &__subtitle{
+      font-size: 22px;
+      color:
+      #fff;
+      font-family: 'Myriad Pro';
+      font-weight: 300;
+
+      @media screen and (max-width: $deviceSizeSM)
+{
+      font-size: 18px;
+}
+    }
+
+   
+}
+  .form-search {  /* форма с boxtuffs.com */
+
+    background: #fff;
+    display: inline-block;
+    border: 3px solid #fff;
+    margin-bottom: 100px;
+    margin-top: 50px;
+
+  @media screen and (max-width: $deviceSizeXXS)
+  {
+    background: none;
+    display: block;
+    border: none;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  @media screen and (max-width: $deviceSizeSM)
+  {
+    margin-bottom: 80px;
+    margin-top: 30px;
+  }
+  
+  
+ 
+  
+  &__form-search-input[type="search"] {  /* поле поиска */
+    
+    padding: 18px 120px;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    
+    @media screen and (max-width: $deviceSizeXXS)
+    {
+      display: block;
+      max-width: 320px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: $deviceSizeSM)
+    {
+      padding: 18px 100px;
+      font-size: 10px;
+    }
+
+}
+    
+  
+
+  &__button{
+    background-color: #5474fd;
+    font-size: 10px;
+    font-family: 'Aleo', serif;
+    text-transform: uppercase;
+    border: none;
+    padding-left: 30px;
+    padding-right: 12px;
+    padding-top: 21px;
+    padding-bottom: 18px;
+    font-size: 14px;
+    color: #fff;
+
+
+&:hover {
+  color: 
+#a74e4e;
+transition: ease-in .4s;
+background-color:
+  #87CEFA;
+}
+
+@media screen and (max-width: $deviceSizeXXS)
+{
+  padding-left: 15px;
+  padding-right: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 12px;
+}
+
+  }
+    
+  }
+  
+    .top__scroll{
+    &__top__scroll-position {
+      font-size: 14px;
+      font-family: 'Josefin Sans', sans-serif;
+      color:$white;
+      margin-bottom: 10px;
+  }
+  &__top__scroll-img {
+    width: 12px;
+}
+img {
+    max-width: 100%;
+    width: auto;
+    }
+  }

@@ -1,0 +1,47 @@
+@import "./../constants/index.scss";
+@import "./../mixins.scss";
+
+.footer{
+    background-color:
+    #232323;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 114px;
+    padding-bottom: 48px;
+    text-align: center;
+    display: block;
+}
+
+footer h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.083;
+    color: 
+    #fff;
+    padding-bottom: 5px;
+}
+
+.subtitl {
+    line-height: 1.625;
+    color: 
+    rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer-icon {
+    padding-top: 20px;
+}
+
+.img:hover {
+    transition: ease-in-out .4s;
+    color: 
+    #5474fd;
+}
+.footer-icon a:first-child {
+}
+.img {
+    color: rgb(232, 232, 232);
+    font-size: 24px;
+    margin-left: 16px;
+}

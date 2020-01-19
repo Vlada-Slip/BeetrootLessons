@@ -1,0 +1,25 @@
+.content__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .img-cover {
+    max-height: 700px;
+    max-width: 700px;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .img-contain {
+    height: auto;
+    width: 100%;
+    display: block;
+    object-fit: contain;
+  }
+  
+  a:link,
+  a:active {
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,26 @@
+@import "./../constants/index.scss";
+@import "./../mixins.scss";
+
+.portfolio {
+  background-color: $primaryYellow;
+
+  &__container {
+    min-height: 330px;
+    @include display-flex(column, center, center);
+  }
+
+  &__title-block {
+    margin-bottom: 44px;
+
+    .title-block {
+      &__title {
+        color: $primaryDarkGrey;
+        opacity: 0.15;
+      }
+
+      &__sub-title {
+        color: $black;
+      }
+    }
+  }
+}

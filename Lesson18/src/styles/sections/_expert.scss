@@ -1,0 +1,117 @@
+@import "./../constants/index.scss";
+@import "./../mixins.scss";
+
+.item {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 590px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &__photo {
+    height: 412px;
+  }
+
+  &__expert-info {
+    height: calc(100% - 412px);
+    border-top: 8px solid $primaryGrey;
+    background-color: $primaryLightestGrey;
+    padding: 20px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__expert-info-row {
+    height: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__expert-info-name {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $primaryDarkGrey;
+  }
+
+  &__expert-info-divider {
+    margin: 20px 0;
+    width: 100%;
+    border-top: 1px dashed $primaryMiddleGrey;
+    opacity: 0.3;
+  }
+
+  &__expert-info-position {
+    line-height: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &__overlay {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-color: $primaryYellow;
+    transition: transform 0.25s ease, opacity 0.3s ease;
+    transform: scale(0);
+    transform-origin: 0 0;
+    opacity: 0;
+  }
+
+  &__overlay-data {}
+
+  &:hover {
+    .item__overlay {
+      pointer-events: auto;
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.expert {
+  &__container {
+    min-height: 1350px;
+    padding: 238px 16px 358px;
+    @include display-flex(column, flex-start, center);
+  }
+
+  &__title-block {
+    margin-bottom: 108px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    // border: 1px solid black;
+
+    @media screen and (max-width: $deviceSizeXMD) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__list-item {
+    width: calc((100% - 60px) / 3);
+
+    @media screen and (max-width: $deviceSizeXMD) {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

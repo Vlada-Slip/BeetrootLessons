@@ -1,0 +1,49 @@
+.root {
+    min-height: 100vh;
+    background-color: #4783dd;
+    color: white;
+  }
+  
+
+  .header {
+    height: 80px;
+    padding-top: 4px;
+  }
+  .header p {
+    text-align: left;
+    color: white;
+  }
+  .list li{
+    margin: 5x 0;
+    display:inline-block;
+    border:black;
+    font-size: 500px;
+}
+.list li.middle{
+    width: 20px;
+    height: 5px;
+    margin: 5x 0;
+    border:black;
+    font-size: 34px; 
+}
+.list li.little{
+    width: 10px;
+    height: 5px;
+    margin: 5x 0;
+    border:black;
+    font-size: 34px; }  
+.list li.big{
+    width: 30px;
+    height: 5px;
+    margin: 5x 0;
+    border:black;
+    font-size: 34px;
+}
+
+ .bordered {
+    width: 800px;
+    height: 500px;
+    padding: 5px;
+    border: 10px solid white;
+  }
+ 
